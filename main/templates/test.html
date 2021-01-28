@@ -39,7 +39,7 @@
                     <p>{{ todo.created_at}}</p>
                     <div class="action.buttons">
                       <img src="{% static './image/star_26px.png' %}"/>  
-                      <img src="{% static './image/delete_bin_24px.png' %}" />
+                     <a href="{% url 'delete-todo' todo.id %}"><img src="{% static './image/delete_bin_24px.png' %}" /></a>
                     </div>
                     </div>
                 </div>{% endfor %}
