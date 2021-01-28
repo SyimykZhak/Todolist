@@ -7,5 +7,10 @@
 </head>
 <body>
     <h2>Example</h2>
+    <div>version 2</div>
+    
 </body>
+{% for todo in todo_list %}
+   <h4> {{todo.text}} - {{todo.created_at}}</h4>
+{% endfor %}
 </html>
